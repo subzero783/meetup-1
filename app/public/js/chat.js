@@ -22,7 +22,7 @@ socket.on('connect', function(){
 		socket.on('updateMessages', function(data){
 			showMessage(data);
 		});
-	}	
+	}	 
 	function showMessage(data){
 		var chatDisplay = document.querySelector('.chat-display');
 		
