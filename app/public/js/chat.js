@@ -1,4 +1,5 @@
-var socket = io("http://localhost:3000");
+var socket = io();
+//var socket = io(process.env.PORT || 3000);
 var chatForm = document.forms.chatForm;
 
 socket.on('connect', function(){
