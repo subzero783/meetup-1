@@ -6,10 +6,10 @@ var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 var dataFile = require('./data/data.json');
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
 
 //app.set('port', process.env.PORT || 3000 );
-app.set('port', 3000 );
+app.set('port', process.env.PORT || 3000 );
 app.set('appData', dataFile);
 app.set('view engine', 'ejs');
 app.set('views', 'app/views');
