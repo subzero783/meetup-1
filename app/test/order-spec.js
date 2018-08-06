@@ -22,7 +22,9 @@ describe("Ordering Items", () => {
 				sku: "CCC", 
 				qty: 3
 			}
-		]
+		];
+		
+		
 
 		order.__set__("inventoryData", this.testData)
 	})
