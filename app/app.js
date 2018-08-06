@@ -8,8 +8,7 @@ var dataFile = require('./data/data.json');
 
 server.listen(process.env.PORT || 3000);
 
-//app.set('port', process.env.PORT || 3000 );
-app.set('port', process.env.PORT || 3000 );
+app.set('port', process.env.PORT || 3000);
 app.set('appData', dataFile);
 app.set('view engine', 'ejs');
 app.set('views', 'app/views');
