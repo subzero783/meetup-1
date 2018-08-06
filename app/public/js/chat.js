@@ -7,7 +7,7 @@ socket.on('connect', function(){
 		var chatUsername = document.querySelector('#chat-username');
 		var chatMessage = document.querySelector('#chat-message');
 		
-		chatForm.one('submit',function(e){
+		chatForm.addEventListener('submit',function(e){
 			e.preventDefault();
 			
 			socket.emit('postMessage',{
