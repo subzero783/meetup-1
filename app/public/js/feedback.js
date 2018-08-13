@@ -1,6 +1,7 @@
 $(function(){
 	$.getJSON('api',updateFeedback);
 	
+	//Submit a feedback message
 	$('.feedback-form').submit(function(e){
 		e.preventDefault();
 		$.post('api',{
@@ -10,6 +11,7 @@ $(function(){
 		}, updateFeedback);
 	});
 	
+	//Delete a feedback message
 	$(".feedback-messages").on('click', function(e){
 		if(e.target.className == 'glyphicon glyphicon-remove'){
 			$.ajax({
